@@ -75,14 +75,15 @@ class Searcher extends React.Component {
 
     render() {
         return (
-            <div style={{ background: `#2980B9`,
-            background: `-webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)`,  
-               background: `linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)` 
-                 }}>
+            <div>
                 <Grid container spacing={40}>
                     <Grid item xs={3}>
                         <div>
-                            <form noValidate autoComplete="off" onSubmit={(e) => this.searchCode(this.state.ifsc, e)}>
+                            <form noValidate autoComplete="off" onSubmit={(e) => this.searchCode(this.state.ifsc, e)} 
+                            style={{ background: `#2980B9`,
+                            background: `-webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)`,  
+                               background: `linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)` 
+                                 }}>
                                 <TextField
                                     id="ifsc"
                                     label="IFSC Code"
@@ -107,6 +108,7 @@ class Searcher extends React.Component {
                         </div>
                     </Grid>
                     </Grid>
+                    <br/>
                     <Grid container spacing={40}>
                     <Grid item xs={3}>
                         <FavCard
