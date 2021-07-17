@@ -75,7 +75,10 @@ class Searcher extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{ background: `#2980B9`,
+            background: `-webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)`,  
+               background: `linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)` 
+                 }}>
                 <Grid container spacing={40}>
                     <Grid item xs={3}>
                         <div>
@@ -102,7 +105,9 @@ class Searcher extends React.Component {
                             ) : null
                         }
                         </div>
-                    </Grid><br/>
+                    </Grid>
+                    </Grid>
+                    <Grid container spacing={40}>
                     <Grid item xs={3}>
                         <FavCard
                             favIFSC = {this.state.favIFSC}
